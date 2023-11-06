@@ -1,0 +1,11 @@
+﻿@model DSCC.MVC._11456.Models.Blog
+
+@{
+    ViewData["Title"] = "Details of " + Model.Title;
+}
+
+<h1>@Model.Title (by @Model.Author)</h1>
+<p>@Model.Content</p>
+<p>Likes: @Model.LikeCount</p>
+
+@Html.ActionLink("Back to list", "Index")

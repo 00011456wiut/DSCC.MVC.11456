@@ -1,0 +1,72 @@
+﻿@model DSCC.MVC._11456.Models.University
+
+@{
+    ViewData["Title"] = "Editing " + Model.Name;
+}
+
+<h1 class="text-center mb-4">Edit University</h1>
+
+<div class="container">
+    <form asp-action="Edit" asp-controller="University" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="ShortName" class="form-label"></label>
+            <textarea asp-for="ShortName" class="form-control" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Courses" class="form-label"></label>
+            <textarea asp-for="Courses" class="form-control" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Rating" class="form-label"></label>
+            <textarea asp-for="Rating" class="form-control" type="number" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Admission" class="form-label"></label>
+            <textarea asp-for="Admission" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Scolarship" class="form-label"></label>
+            <textarea asp-for="Scolarship" class="form-control" type="number" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="TuitionFee" class="form-label"></label>
+            <textarea asp-for="TuitionFee" class="form-control" type="number" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="EstablishedIn" class="form-label"></label>
+            <textarea asp-for="EstablishedIn" class="form-control" type="number" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Image" class="form-label"></label>
+            <textarea asp-for="Image" class="form-control" type="number" required></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Location" class="form-label"></label>
+            <textarea asp-for="Location" class="form-control" type="number" required></textarea>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Update University</button>
+    </form>
+</div>

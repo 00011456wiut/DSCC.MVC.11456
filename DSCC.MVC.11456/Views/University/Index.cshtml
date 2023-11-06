@@ -1,0 +1,44 @@
+﻿@model IEnumerable<DSCC.MVC._11456.Models.University>
+
+@{
+    ViewData ["Title"] = "Uzbekistan's Universities";
+}
+
+<h1 class="text-center mb-4">Universities
+    <a href="@Url.Action("Create", "University")" class="btn btn-primary">Create</a>
+    </h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info" role="alert"> No Universities </div>
+}
+
+else
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var uni in Model)
+
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header"> Top University
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@uni.Name</h5>
+                            <p class="card-text">@uni.Description</p>
+                            <a href="@Url.Action("Details", "University", new { id = uni.Id })" class="btn btn-primary">View Details</a>
+                            <a href="@Url.Action("Edit", "University", new { id = uni.Id })" class="btn btn-secondary">Edit</a>
+                            <form asp-action="Delete" asp-controller="University" asp-route-id="@uni.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this university?');">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+}

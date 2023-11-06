@@ -1,0 +1,11 @@
+﻿@model DSCC.MVC._11456.Models.University
+
+@{
+    ViewData["Title"] = "Details of " + Model.Name;
+}
+
+<h1>@Model.Name (@Model.ShortName)</h1>
+<p>@Model.Location</p>
+<p>@Model.Description</p>
+
+@Html.ActionLink("Back to list", "Index")

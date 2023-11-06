@@ -1,0 +1,20 @@
+﻿version: 0.0
+os: windows
+files:
+  - source: \DSCC.MVC.11456\DSCC.MVC.11456\publish
+    destination: c:\inetpub\wwwroot\dscc-mvc-11456
+  - source: \deletewebsite.ps1
+    destination: c:\temp
+  - source: \installwebsite.ps1
+    destination: c:\temp
+  - source: \deletewebsite.bat
+    destination: c:\temp
+  - source: \installwebsite.bat
+    destination: c:\temp
+hooks:
+  BeforeInstall:
+    - location: \deletewebsite.bat
+      timeout: 180
+  AfterInstall:
+    - location: \installwebsite.bat
+      timeout: 180

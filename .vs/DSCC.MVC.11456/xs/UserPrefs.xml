@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{518B159B-4CBD-40C3-AB33-C8CAC1DCCDC0}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DSCC.MVC.11456/Services/ApiService.cs">
+    <Files>
+      <File FileName="DSCC.MVC.11456/Views/University/Index.cshtml" Line="8" Column="33" />
+      <File FileName="DSCC.MVC.11456/Views/University/Edit.cshtml" Line="4" Column="48" />
+      <File FileName="DSCC.MVC.11456/Models/Blog.cs" Line="17" Column="1" />
+      <File FileName="DSCC.MVC.11456/Models/University.cs" Line="9" Column="34" />
+      <File FileName="DSCC.MVC.11456/Controllers/UniversityController.cs" Line="54" Column="66" />
+      <File FileName="DSCC.MVC.11456/Views/Blog/Index.cshtml" Line="28" Column="29" />
+      <File FileName="DSCC.MVC.11456/Views/Blog/Details.cshtml" Line="9" Column="27" />
+      <File FileName="DSCC.MVC.11456/Views/Blog/Edit.cshtml" Line="20" Column="42" />
+      <File FileName="DSCC.MVC.11456/Services/ApiService.cs" Line="74" Column="51" />
+      <File FileName="DSCC.MVC.11456/Controllers/BlogController.cs" Line="1" Column="1" />
+      <File FileName="DSCC.MVC.11456/Views/University/Details.cshtml" Line="1" Column="1" />
+      <File FileName="DSCC.MVC.11456/Services/IApiService.cs" Line="20" Column="54" />
+      <File FileName="DSCC.MVC.11456/Views/University/Edit (copy).cshtml" Line="5" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DSCC.MVC.11456" expanded="True">
+            <Node name="DSCC.MVC.11456" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="University" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DSCC.MVC.11456 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
