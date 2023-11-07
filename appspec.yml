@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: \publish
+  - source: \app
     destination: c:\inetpub\wwwroot
 hooks:
   BeforeInstall:
